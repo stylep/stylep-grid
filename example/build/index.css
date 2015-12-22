@@ -1,0 +1,159 @@
+/* @import stylep-button; */
+/* Spacer */
+.spacer { flex: auto; }
+
+/* Container */
+.container, .container--fluid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container--flex {
+  align-items: center;
+  border: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container--fluid {
+  padding-left: var(--outter-margin, 2rem);
+  padding-right: var(--outter-margin, 2rem);
+}
+
+/* Row */
+
+.row, .row--reverse {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  margin-left: var(--gutter-compensation, -.5rem);
+  margin-right: var(--gutter-compensation, -.5rem);
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row--reverse {
+  flex-direction: row-reverse;
+}
+
+.row--break {
+  margin-left: var(--negative-gutter, calc(-1rem - 1px));
+  margin-right: var(--negative-gutter, calc(-1rem - 1px));
+}
+
+.row--collapse > * { padding-left: 0; padding-right: 0; }
+
+/* Columns */
+
+.column, .column--reverse, .column--1, .column--2, .column--3, .column--4, .column--5, .column--6, .column--7, .column--8, .column--9, .column--10, .column--11, .column--12 {
+  box-sizing: border-box;
+  flex: 1 0 0%;
+  max-width: 100%;
+  padding-left: var(--half-gutter-width, .5rem);
+  padding-right: var(--half-gutter-width, .5rem);
+}
+
+.column--reverse {
+  flex-direction: column-reverse;
+}
+
+.column--first { order: -1; }
+.column--last { order: 1; }
+
+.column--1 { flex-basis: var(--col-1, 8.333%); max-width: var(--col-1, 8.333%); }
+.column--2 { flex-basis: var(--col-2, 16.666%); max-width: var(--col-2, 16.666%); }
+.column--3 { flex-basis: var(--col-3, 25%); max-width: var(--col-3, 25%); }
+.column--4 { flex-basis: var(--col-4, 33.333%); max-width: var(--col-4, 33.333%); }
+.column--5 { flex-basis: var(--col-5, 41.667%); max-width: var(--col-5, 41.667%); }
+.column--6 { flex-basis: var(--col-6, 50%); max-width: var(--col-6, 50%); }
+.column--7 { flex-basis: var(--col-7, 58.33%); max-width: var(--col-7, 58.33%); }
+.column--8 { flex-basis: var(--col-8, 66.667%); max-width: var(--col-8, 66.667%); }
+.column--9 { flex-basis: var(--col-9, 75%); max-width: var(--col-9, 75%); }
+.column--10 { flex-basis: var(--col-10, 83.333%); max-width: var(--col-10, 83.333%); }
+.column--11 { flex-basis: var(--col-11, 91.667%); max-width: var(--col-11, 91.667%); }
+.column--12 { flex-basis: var(--col-12, 100%); max-width: var(--col-12, 100%); }
+
+.column--push-1 { margin-left: var(--col-1, 8.333%); }
+.column--push-2 { margin-left: var(--col-2, 16.666%); }
+.column--push-3 { margin-left: var(--col-3, 25%); }
+.column--push-4 { margin-left: var(--col-4, 33.333%); }
+.column--push-5 { margin-left: var(--col-5, 41.667%); }
+.column--push-6 { margin-left: var(--col-6, 50%); }
+.column--push-7 { margin-left: var(--col-7, 58.33%); }
+.column--push-8 { margin-left: var(--col-8, 66.667%); }
+.column--push-9 { margin-left: var(--col-9, 75%); }
+.column--push-10 { margin-left: var(--col-10, 83.333%); }
+.column--push-11 { margin-left: var(--col-11, 91.667%); }
+
+.column--pull-1 { margin-right: var(--col-1, 8.333%); }
+.column--pull-2 { margin-right: var(--col-2, 16.666%); }
+.column--pull-3 { margin-right: var(--col-3, 25%); }
+.column--pull-4 { margin-right: var(--col-4, 33.333%); }
+.column--pull-5 { margin-right: var(--col-5, 41.667%); }
+.column--pull-6 { margin-right: var(--col-6, 50%); }
+.column--pull-7 { margin-right: var(--col-7, 58.33%); }
+.column--pull-8 { margin-right: var(--col-8, 66.667%); }
+.column--pull-9 { margin-right: var(--col-9, 75%); }
+.column--pull-10 { margin-right: var(--col-10, 83.333%); }
+.column--pull-11 { margin-right: var(--col-11, 91.667%); }
+
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em 1em .125em;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
+.box, .box--small, .box--first, .box--nested {
+  background-color: #444;
+  color: white;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.box--small {
+  width: 300px;
+}
+
+.box--first {
+  background-color: grey;
+}
+
+.box--nested {
+  background-color: #bdbdbd;
+}
+
+/* spacer */
+
+/* container */
+
+/* row */
+
+/* column */
+
