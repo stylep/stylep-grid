@@ -63,7 +63,7 @@
 
 /* Columns */
 
-%column-base {
+%column {
   box-sizing: border-box;
   flex: 1 0 0%;
   max-width: 100%;
@@ -71,17 +71,13 @@
   padding-right: var(--half-gutter-width, .5rem);
 }
 
-%column {
-  @extend %column-base;
-}
-
 %column-reverse {
-  @extend %column-base;
+  @extend %column;
   flex-direction: column-reverse;
 }
 
 @define-mixin column $width {
-  @extend %column-base;
+  @extend %column;
   flex-basis: $width;
   max-width: $width;
 }
