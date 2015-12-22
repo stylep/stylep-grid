@@ -18,5 +18,48 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-/* specific classNames that show off every pattern and style */
+/* spacer */
+.spacer { @extend %spacer; }
+
+/* container */
+.container {@extend %spacer; }
+.container--column { @extend %container-column; }
+.container--flex { @extend %container-flex; }
+.container--fluid { @extend %container-fluid; }
+
+/* row */
+.row { @extend %row }
+.row--reverse { @extend %row-reverse; }
+.row--break { @extend %row-break; }
+.row--collapse { @extend %row-collapse; }
+
+/* column */
+.column { @extend %column; }
+.column--reverse { @extend %column-reverse; }
+.column--first { @extend %column-first; }
+.column--last { @extend %column-last; }
+.column--1 { @extend %column-1; }
+.column--2 { @extend %column-2; }
+.column--3 { @extend %column-3; }
+.column--4 { @extend %column-4; }
+.column--5 { @extend %column-5; }
+.column--6 { @extend %column-6; }
+.column--7 { @extend %column-7; }
+.column--8 { @extend %column-8; }
+.column--9 { @extend %column-9; }
+.column--10 { @extend %column-10; }
+.column--11 { @extend %column-11; }
+.column--12 { @extend %column-12; }
+
+.column--push-1 { @extend %column-push-1; }
+.column--push-2 { @extend %column-push-2; }
+.column--push-3 { @extend %column-push-3; }
+.column--push-4 { @extend %column-push-4; }
+.column--push-5 { @extend %column-push-5; }
+.column--push-6 { @extend %column-push-6; }
+.column--push-7 { @extend %column-push-7; }
+.column--push-8 { @extend %column-push-8; }
+.column--push-9 { @extend %column-push-9; }
+.column--push-10 { @extend %column-push-10; }
+.column--push-11 { @extend %column-push-11; }
 
