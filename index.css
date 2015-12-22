@@ -56,8 +56,9 @@
 
 %row-collapse {
   > * {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Columns */
@@ -111,7 +112,7 @@
 %column-push-8 { margin-left: var(--col-8, 66.667%); }
 %column-push-9 { margin-left: var(--col-9, 75%); }
 %column-push-10 { margin-left: var(--col-10, 83.333%); }
-%column-push-11 { margin-left: var(--col-11, 91.667); }
+%column-push-11 { margin-left: var(--col-11, 91.667%); }
 
 %column-pull-1 { margin-right: var(--col-1, 8.333%); }
 %column-pull-2 { margin-right: var(--col-2, 16.666%); }
