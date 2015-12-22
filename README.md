@@ -1,7 +1,8 @@
 # stylep-grid
+<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
 
 A simple flexbox grid system comprised of containers, rows and columns. With variable inheritance you can make it do whatever you want.
-<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
+
 
 ## Install
 You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project title.
