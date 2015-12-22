@@ -1,6 +1,6 @@
 # stylep-grid
 
-Everything you need to get started making a new style pattern.
+A simple flexbox grid system comprised of containers, rows and columns. With variable inheritance you can make it do whatever you want.
 <img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
 
 ## Install
@@ -16,39 +16,80 @@ spm install grid
 
 @import “stylep-grid”;
 
-.class {
-
-  /* Button Design Pattern */
-  @extend %grid;
-
-  /* Customize your button */
-  @mixin grid param, param;
-
-  /* or roll your own */
-
-  /* add something custom in here */
+.container {
+  /* Container Pattern */
+  @extend %container;
 }
+
+.row {
+  /* Row Pattern */
+  @extend %row;
+}
+
+.column {
+  /* Column Pattern */
+  @extend %column;
+}
+
 ```
 
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %grid-inline;`
-Describe what this pattern does.
+#### `@extend %spacer;`
+This is a generic pattern that expands the entirety of the space around the element it is applied to. See the example for absolute centered objects with spacer.
 
-## Styles
-Customizable presets that give your pattern a specific style-set.
+### Container
 
-### grid-solid
-Describe the visual look and feel of this style.
+#### `@extend %container;`
+A simple margin auto hack container.
 
-##### Options
+#### `@extend container-column;`
+Flexbox enabled column.
 
-* `$param: default-value` Describe what this does
+#### `@extend container-flex;`
+Center aligned flexible container.
 
-##### Example
-```css
-/* describe in english what this following statement really means in detail */
-@mixin grid-solid default-value;
-```
+#### `@extend container-fluid;`
+A simple container with inner padding.
+
+### Row
+
+#### `@extend %row;`
+A basic flexbox enabled row.
+
+#### `@extend %row-reverse;`
+Same thing only backwards ordered columns in it.
+
+#### `@extend %row-break;`
+A row that does away with margins and bleeds right up to the edge of the containing element.
+
+#### `@extend %row-collapse;`
+This removes all horizontal padding from your columns in this row.
+
+### Columns
+
+#### `@extend %column;`
+A column that horizontally expands to the containing element.
+
+#### `@extend %column-reverse;`
+Same as a column, only it appears in reverse order.
+
+#### `@mixin column $width;`
+A simple column sizing mixin.
+
+#### `@extend %column-first;`
+This takes your column and places it at the beginning of the containing row.
+
+#### `@extend %column-last;`
+This takes your column and places it at the end of the containing row.
+
+#### `@extend %column-X;`
+Replace X with any number between 1-12 to get a element with that specific number of columns.
+
+#### `@extend %column-push-X;`
+Replace X with any number between 1-11 to push your element that many columns wide.
+
+#### `@extend %column-pull-X;`
+Replace X with any number between 1-11 to pull your element that many columns wide.
 
