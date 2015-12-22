@@ -1,27 +1,252 @@
 <!doctype html>
 <html>
-<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>stylep-name/example</title>
-        <link rel="stylesheet" href="build/index.css">
-</head>
-<body>
-        <h1>stylep-name/example</h1>
+        <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>stylep-grid/example</title>
+                <link rel="stylesheet" href="build/index.css">
+        </head>
+        <body>
+                <h1>stylep-grid/example</h1>
 
-        <h2>Patterns</h2>
+                <h2>Patterns</h2>
 
-        <h3>Name</h3>
-        <section>
-                <!-- ... -->
-        </section>
+                <h3>Spacer</h3>
+                <section>
+                        <div class="container--column box--small">
+                                <div class="spacer"></div>
+                                <div class="row">
+                                        <div class="spacer"></div>
+                                        <div class="centered">.spacer</div>
+                                        <div class="spacer"></div>
+                                </div>
+                                <div class="spacer"></div>
+                        </div>
+                </section>
 
-        <h2>Styles</h2>
+                <h3>Container</h3>
+                <section>
+                        <div class="container box--small">.container</div>
+                        <div class="container--fluid box--small">.container--fluid</div>
+                        <div class="container--flex box--small">.container--flex</div>
+                        <div class="container--column box--small">.container--column</div>
+                </section>
 
-        <h3>Name</h3>
-        <section>
-                <!-- ... -->
-        </section>
+                <h3>Row</h3>
+                <section>
+                        <div class="row box">.row</div>
+                        <div class="row--break box">.row--break</div>
+                        <div class="row--collapse box">.row--collapse</div>
 
-</body>
+                        <h4>.row--reverse</h4>
+                        <div class="row">
+                        <div class="column--12">
+                                <div class="box box-container">
+                                        <div class="row--reverse">
+                                                <div class="column--2">
+                                                        <div class="box--first">1</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">2</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">3</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">4</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">5</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">6</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                </section>
+
+                <h3>Column</h3>
+                <section>
+                        <h4>Auto calculating columns</h4>
+                        <div class="row">
+                                <div class="column"><div class="box">.column</div></div>
+                                <div class="column"><div class="box">.column</div></div>
+                                <div class="column"><div class="box">.column</div></div>
+                                <div class="column"><div class="box">.column</div></div>
+                                <div class="column"><div class="box">.column</div></div>
+                        </div>
+                </section>
+
+                <section>
+                        <h4>.column--first</h4>
+                        <div class="row">
+                        <div class="column--12">
+                                <div class="box box-container">
+                                        <div class="row">
+                                                <div class="column--2">
+                                                        <div class="box--first">1</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">2</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">3</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">4</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">5</div>
+                                                </div>
+                                                <div class="column--2 column--first">
+                                                        <div class="box--nested">6 .column--first</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+
+                        <h4>.column--last<h4>
+                        <div class="row">
+                        <div class="column--12">
+                                <div class="box box-container">
+                                        <div class="row">
+                                                <div class="column--2 column--last">
+                                                        <div class="box--nested">1 .column--last</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">2</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">3</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">4</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">5</div>
+                                                </div>
+                                                <div class="column--2">
+                                                        <div class="box--first">6</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                </section>
+
+                <section>
+                        <h4>Default 12-column grid</h4>
+                        <div class="row">
+                                <div class="column--12"><div class="box">.column--12</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--1"><div class="box">1</div></div>
+                                <div class="column--11"><div class="box">11</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--2"><div class="box">2</div></div>
+                                <div class="column--10"><div class="box">10</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--3"><div class="box">3</div></div>
+                                <div class="column--9"><div class="box">9</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--4"><div class="box">4</div></div>
+                                <div class="column--8"><div class="box">8</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--5"><div class="box">5</div></div>
+                                <div class="column--7"><div class="box">7</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--6"><div class="box">6</div></div>
+                                <div class="column--6"><div class="box">6</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--7"><div class="box">7</div></div>
+                                <div class="column--5"><div class="box">5</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--8"><div class="box">8</div></div>
+                                <div class="column--4"><div class="box">4</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--9"><div class="box">9</div></div>
+                                <div class="column--3"><div class="box">3</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--10"><div class="box">10</div></div>
+                                <div class="column--2"><div class="box">2</div></div>
+                        </div>
+                        <div class="row">
+                                <div class="column--11"><div class="box">11</div></div>
+                                <div class="column--1"><div class="box">1</div></div>
+                        </div>
+                </section>
+
+                <section>
+                        <h4>Offset with Column Push</h4>
+                        <div class="row"> <div class="column--1 column--push-11"><div class="box">1</div></div> </div>
+                        <div class="row"> <div class="column--2 column--push-10"><div class="box">2</div></div> </div>
+                        <div class="row"> <div class="column--3 column--push-9"><div class="box">3</div></div> </div>
+                        <div class="row"> <div class="column--4 column--push-8"><div class="box">4</div></div> </div>
+                        <div class="row"> <div class="column--5 column--push-7"><div class="box">5</div></div> </div>
+                        <div class="row"> <div class="column--6 column--push-6"><div class="box">6</div></div> </div>
+                        <div class="row"> <div class="column--7 column--push-5"><div class="box">7</div></div> </div>
+                        <div class="row"> <div class="column--8 column--push-4"><div class="box">8</div></div> </div>
+                        <div class="row"> <div class="column--9 column--push-3"><div class="box">9</div></div> </div>
+                        <div class="row"> <div class="column--10 column--push-2"><div class="box">10</div></div> </div>
+                        <div class="row"> <div class="column--11 column--push-1"><div class="box">11</div></div> </div>
+                </section>
+
+                <section>
+                        <h4>Nesting</h4>
+                        <div class="row">
+                                <div class="column--4">
+                                        <div class="box box-container">
+                                                <div class="row">
+                                                        <div class="column--12">
+                                                                <div class="box--first box-container">
+                                                                        <div class="row">
+                                                                                <div class="column--6">
+                                                                                        <div class="box--nested"></div>
+                                                                                </div>
+                                                                                <div class="column--6">
+                                                                                        <div class="box--nested"></div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="column--8">
+                                        <div class="box box-container">
+                                                <div class="row">
+                                                        <div class="column--12">
+                                                                <div class="box--first box-container">
+                                                                        <div class="row">
+                                                                                <div class="column--3">
+                                                                                        <div class="box--nested"></div>
+                                                                                </div>
+                                                                                <div class="column--6">
+                                                                                        <div class="box--nested"></div>
+                                                                                </div>
+                                                                                <div class="column--3">
+                                                                                        <div class="box--nested"></div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+
+        </body>
 </html>
 

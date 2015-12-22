@@ -18,11 +18,39 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
+.box,
+%box {
+  background-color: #444;
+  color: white;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  padding-top: 1rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.box--small {
+  @extend %box;
+  width: 300px;
+}
+
+.box--first {
+  @extend %box;
+  background-color: grey;
+}
+
+.box--nested {
+  @extend %box;
+  background-color: #bdbdbd;
+}
+
 /* spacer */
 .spacer { @extend %spacer; }
 
 /* container */
-.container {@extend %spacer; }
+.container {@extend %container; }
 .container--column { @extend %container-column; }
 .container--flex { @extend %container-flex; }
 .container--fluid { @extend %container-fluid; }
@@ -62,4 +90,16 @@ h3 { font-weight: 300; }
 .column--push-9 { @extend %column-push-9; }
 .column--push-10 { @extend %column-push-10; }
 .column--push-11 { @extend %column-push-11; }
+
+.column--pull-1 { @extend %column-pull-1; }
+.column--pull-2 { @extend %column-pull-2; }
+.column--pull-3 { @extend %column-pull-3; }
+.column--pull-4 { @extend %column-pull-4; }
+.column--pull-5 { @extend %column-pull-5; }
+.column--pull-6 { @extend %column-pull-6; }
+.column--pull-7 { @extend %column-pull-7; }
+.column--pull-8 { @extend %column-pull-8; }
+.column--pull-9 { @extend %column-pull-9; }
+.column--pull-10 { @extend %column-pull-10; }
+.column--pull-11 { @extend %column-pull-11; }
 
