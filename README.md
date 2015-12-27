@@ -94,3 +94,6 @@ Replace X with any number between 1-11 to push your element that many columns wi
 #### `@extend %column-pull-X;`
 Replace X with any number between 1-11 to pull your element that many columns wide.
 
+## License
+This project is licensed under the MIT [license](LICENSE).
+
