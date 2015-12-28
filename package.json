@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stylep/stylep-button.git"
+    "url": "git+https://github.com/stylep/stylep-grid.git"
   },
   "keywords": [
     "stylep",
@@ -33,7 +33,7 @@
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stylep/stylep-button/issues"
+    "url": "https://github.com/stylep/stylep-grid/issues"
   },
-  "homepage": "https://github.com/stylep/stylep-button#readme"
+  "homepage": "https://github.com/stylep/stylep-grid#readme"
 }
